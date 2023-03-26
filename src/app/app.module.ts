@@ -38,7 +38,9 @@ import { TicketComponent } from './dashbord/ticket/ticket.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { FormsModule } from '@angular/forms';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselleComponent } from './home/carouselle/carouselle.component';
 
 
 
@@ -80,6 +82,7 @@ import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootst
     CardsComponent,
     ListDocComponent,
     TicketComponent,
+    CarouselleComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +90,7 @@ import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootst
     HttpClientModule,
     NgbModule,
     NgbPaginationModule,
+    NgbCarouselModule,
     NgbTypeaheadModule,
     FormsModule,
     NgxPaginationModule
