@@ -1,4 +1,14 @@
 <app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="container-fluid">
+    <div *ngIf="auth" class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 bg-light">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <app-dashbord></app-dashbord>
+         </div>
+    </div> 
+    <div *ngIf="!auth">
+        <router-outlet></router-outlet>
+    </div>  
+    <app-footer></app-footer>

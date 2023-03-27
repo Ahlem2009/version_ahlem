@@ -10,7 +10,6 @@ import { ContentComponent } from './dashbord/content/content.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { HeaderComponent } from './dashbord/header/header.component';
 import { ListDocComponent } from './dashbord/list-doc/list-doc.component';
-import { SidebarComponent } from './dashbord/sidebar/sidebar.component';
 import { TicketComponent } from './dashbord/ticket/ticket.component';
 // import { FactsComponent } from './home/facts/facts.component';
 import { FooterComponent } from './footer/footer.component';
@@ -25,6 +24,7 @@ import { Article } from './models/article.model';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { ServiceComponent } from './service/service.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { VaerticalComponent } from './vaertical/vaertical.component';
 
@@ -43,7 +43,6 @@ const routes: Routes = [
   {path:"globale",component:GlobaleComponent},
   {path:"inscription",component:InscritComponent},
   {path:"cartes-categ",component:CartesAffichantCategoriesComponent},
-  {path:"sidebar",component:SidebarComponent},
   {path:"cat/:id",component:CategoriesComponent},
   {path:"recherche",component:RechercheComponent},
   {path:"dashbord",component:DashbordComponent},

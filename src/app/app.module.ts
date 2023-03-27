@@ -29,7 +29,6 @@ import { CategoriesComponent } from './categories/categories.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashbordComponent } from './dashbord/dashbord.component';
-import { SidebarComponent } from './dashbord/sidebar/sidebar.component';
 import { HeaderComponent } from './dashbord/header/header.component';
 import { ContentComponent } from './dashbord/content/content.component';
 import { CardsComponent } from './dashbord/cards/cards.component';
@@ -41,12 +40,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselleComponent } from './home/carouselle/carouselle.component';
-
-
-
-
-
-
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +70,7 @@ import { CarouselleComponent } from './home/carouselle/carouselle.component';
     CategoriesComponent,
     RechercheComponent,
     DashbordComponent,
-    SidebarComponent,
+  SidebarComponent,
     HeaderComponent,
     ContentComponent,
     CardsComponent,
