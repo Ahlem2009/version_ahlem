@@ -1,11 +1,12 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
     <div *ngIf="auth" class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 bg-light">
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-light">
             <app-sidebar></app-sidebar>
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-12">
-            <app-dashbord></app-dashbord>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <!-- <app-dashbord></app-dashbord> -->
+            <router-outlet></router-outlet>
          </div>
     </div> 
     <div *ngIf="!auth">

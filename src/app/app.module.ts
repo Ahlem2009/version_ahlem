@@ -28,12 +28,7 @@ import { CarteArticleComponent } from './home/carte-article/carte-article.compon
 import { CategoriesComponent } from './categories/categories.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DashbordComponent } from './dashbord/dashbord.component';
-import { HeaderComponent } from './dashbord/header/header.component';
-import { ContentComponent } from './dashbord/content/content.component';
-import { CardsComponent } from './dashbord/cards/cards.component';
-import { ListDocComponent } from './dashbord/list-doc/list-doc.component';
-import { TicketComponent } from './dashbord/ticket/ticket.component';
+
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { FormsModule } from '@angular/forms';
@@ -41,7 +36,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselleComponent } from './home/carouselle/carouselle.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-
+import { FeaturesModule } from './features/features.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,25 +64,21 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CarteArticleComponent,
     CategoriesComponent,
     RechercheComponent,
-    DashbordComponent,
   SidebarComponent,
-    HeaderComponent,
-    ContentComponent,
-    CardsComponent,
-    ListDocComponent,
-    TicketComponent,
     CarouselleComponent,
-  ],
+    
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
+    FormsModule,
     NgbPaginationModule,
     NgbCarouselModule,
     NgbTypeaheadModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FeaturesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

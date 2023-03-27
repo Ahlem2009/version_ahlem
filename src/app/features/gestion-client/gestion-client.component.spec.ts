@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashbordComponent } from './dashbord.component';
+import { GestionClientComponent } from './gestion-client.component';
 
-describe('DashbordComponent', () => {
-  let component: DashbordComponent;
-  let fixture: ComponentFixture<DashbordComponent>;
+describe('GestionClientComponent', () => {
+  let component: GestionClientComponent;
+  let fixture: ComponentFixture<GestionClientComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashbordComponent ]
+      declarations: [ GestionClientComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DashbordComponent);
+    fixture = TestBed.createComponent(GestionClientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

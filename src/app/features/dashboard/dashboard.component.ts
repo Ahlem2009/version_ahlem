@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { Article } from '../models/article.model';
-import { ticket } from '../models/ticket.model';
-import { ArticleService } from '../services/article.service';
-import { TicketService } from '../services/ticket.service';
-
+import { Article } from 'src/app/models/article.model';
+import { ticket } from 'src/app/models/ticket.model';
+import { ArticleService } from 'src/app/services/article.service';
+import { TicketService } from 'src/app/services/ticket.service';
 @Component({
-  selector: 'app-dashbord',
-  templateUrl: './dashbord.component.html',
-  styleUrls: ['./dashbord.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css'],
 })
-export class DashbordComponent {
+export class DashboardComponent {
 
   // document
-   item1: Article[] = [];
+  item1: Article[] = [];
   //ticket
   item2: ticket[] = [];
   constructor(

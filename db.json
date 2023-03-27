@@ -18,6 +18,55 @@
       { "label": "Gestion du compte", "sousLabel" : ["Modifier le mot de passe" , "mise a jour les données personnelles"] }
     ]
   }
+],"compte":[
+{
+  "id": 1,
+  "nom": "client1",
+  "prenom": "client1",
+  "email":"clien1@gmail",
+  "role":"client",
+  "password": "123456"
+},
+{
+  "id": 2,
+  "nom": "client2",
+  "prenom": "client2",
+  "email":"client2@gmail",
+  "role":"client",
+  "password": "123456"
+},
+{
+  "id": 3,
+  "nom": "expert1",
+  "prenom": "expert1",
+  "email":"expert1@gmail",
+  "role":"expert",
+  "password": "123456"
+},
+{
+  "id": 4,
+  "nom": "expert2",
+  "prenom": "expert2",
+  "email":"expert2@gmail",
+  "role":"expert",
+  "password": "123456"
+},
+{
+  "id": 5,
+  "nom": "manager1",
+  "prenom": "manager1",
+  "email":"manager1@gmail",
+  "role":"manager",
+  "password": "123456"
+},
+{
+  "id": 6,
+  "nom": "manager2",
+  "prenom": "manager2",
+  "email":"manager2@gmail",
+  "role":"manager",
+  "password": "123456"
+}
 ],
   "article": [
     {

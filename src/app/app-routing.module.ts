@@ -5,12 +5,6 @@ import { AvanceComponent } from './avance/avance.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { MenuCatHorizentalComponent } from './categories/menu-cat-horizental/menu-cat-horizental.component';
 
-import { CardsComponent } from './dashbord/cards/cards.component';
-import { ContentComponent } from './dashbord/content/content.component';
-import { DashbordComponent } from './dashbord/dashbord.component';
-import { HeaderComponent } from './dashbord/header/header.component';
-import { ListDocComponent } from './dashbord/list-doc/list-doc.component';
-import { TicketComponent } from './dashbord/ticket/ticket.component';
 // import { FactsComponent } from './home/facts/facts.component';
 import { FooterComponent } from './footer/footer.component';
 import { GlobaleComponent } from './globale/globale.component';
@@ -27,11 +21,21 @@ import { ServiceComponent } from './service/service.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { VaerticalComponent } from './vaertical/vaertical.component';
-
+import {DashboardComponent} from './features/dashboard/dashboard.component'
 
 const routes: Routes = [
   // {path:"footer",component:FooterComponent},
   {path:"",component:HomeComponent},
+  {
+    path:'',
+component:DashboardComponent,
+children:[
+  {
+    path:'',
+    loadChildren: () => import('./features/features.module').then(x=>x.FeaturesModule)
+  }
+]
+},
   // {path:"navbar",component:NavbarComponent},
   {path:"service",component:ServiceComponent},
   {path:"login",component:LoginComponent},
@@ -45,13 +49,8 @@ const routes: Routes = [
   {path:"cartes-categ",component:CartesAffichantCategoriesComponent},
   {path:"cat/:id",component:CategoriesComponent},
   {path:"recherche",component:RechercheComponent},
-  {path:"dashbord",component:DashbordComponent},
   {path:"sidebar",component:SidebarComponent},
-  {path:"header",component:HeaderComponent},
-  {path:"content",component:ContentComponent},
-  {path:"cards",component:CardsComponent},
-  {path:"list-doc",component:ListDocComponent},
-  {path:"ticket",component:TicketComponent},
+ 
 
 
 ]
