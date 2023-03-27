@@ -12,10 +12,6 @@ import { HeaderComponent } from './dashbord/header/header.component';
 import { ListDocComponent } from './dashbord/list-doc/list-doc.component';
 import { SidebarComponent } from './dashbord/sidebar/sidebar.component';
 import { TicketComponent } from './dashbord/ticket/ticket.component';
-
-
-
-
 // import { FactsComponent } from './home/facts/facts.component';
 import { FooterComponent } from './footer/footer.component';
 import { GlobaleComponent } from './globale/globale.component';
@@ -47,6 +43,7 @@ const routes: Routes = [
   {path:"globale",component:GlobaleComponent},
   {path:"inscription",component:InscritComponent},
   {path:"cartes-categ",component:CartesAffichantCategoriesComponent},
+  {path:"sidebar",component:SidebarComponent},
   {path:"cat/:id",component:CategoriesComponent},
   {path:"recherche",component:RechercheComponent},
   {path:"dashbord",component:DashbordComponent},
