@@ -32,11 +32,11 @@
                 <tr *ngFor="let item2 of item2" >
                   
                     <td>
-                        <ngb-highlight [result]=" item2.nom "></ngb-highlight>
+                         {{item2.nom }}
                     </td>
-                    <td><ngb-highlight [result]="item2.priority"></ngb-highlight></td>
-                    <td><ngb-highlight [result]="item2.category " ></ngb-highlight></td>
-                    <td><ngb-highlight [result]="item2.date" ></ngb-highlight></td>
+                    <td> {{item2.priority}}</td>
+                    <td>{{item2.category}} </td>
+                    <td>{{item2.date}}</td>
                 </tr>
             </tbody>
         </table>

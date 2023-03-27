@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router'
 import { FeauturesRoutingModule } from './features.routing';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 import {GestionClientComponent} from './gestion-client/gestion-client.component'
@@ -15,7 +16,6 @@ import { ContentComponent } from './dashboard/content/content.component';
 import { HeaderComponent } from './dashboard/header/header.component';
 import { ListDocComponent } from './dashboard/list-doc/list-doc.component';
 import { TicketComponent } from './dashboard/ticket/ticket.component'
-import { NgbHighlight } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -40,7 +40,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     FormsModule,
     RouterModule.forChild(FeauturesRoutingModule),
-    NgbHighlight
-  ]
+    NgxPaginationModule 
+    ]
 })
 export class FeaturesModule { }
