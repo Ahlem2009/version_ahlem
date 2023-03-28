@@ -13,7 +13,7 @@ constructor() {
     ref: '',
     date_publication : '',
     abstract:'',
-    tags :'',
+    tags :[],
   };
 }
 ngOnInit(): void {

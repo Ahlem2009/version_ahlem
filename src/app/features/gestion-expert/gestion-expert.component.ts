@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Compte } from 'src/app/models/compte.model';
 import { CompteService } from 'src/app/services/compte.service';
 
@@ -7,7 +7,7 @@ import { CompteService } from 'src/app/services/compte.service';
   templateUrl: './gestion-expert.component.html',
   styleUrls: ['./gestion-expert.component.css']
 })
-export class GestionExpertComponent {
+export class GestionExpertComponent implements OnInit {
   items!: Compte[];
 
   constructor(private dataService: CompteService) { }

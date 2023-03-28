@@ -10,6 +10,7 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {CardsComponent} from './dashboard/cards/cards.component'
 import { ContentComponent } from './dashboard/content/content.component';
 import { HeaderComponent } from './dashboard/header/header.component';
+import { GestionDocumentComponent } from './gestion-document/gestion-document.component';
 
 export const FeauturesRoutingModule: Routes = [
   {path:"dashboard",component:DashboardComponent},
@@ -22,4 +23,7 @@ export const FeauturesRoutingModule: Routes = [
   {path:"cards",component:CardsComponent},
   {path:"content",component:ContentComponent},
   {path:"header",component:HeaderComponent},
+  {path:"gestion-doc",component:GestionDocumentComponent},
+  {path:"creation-offre",component:CreerOffreComponent},
+  
 ]

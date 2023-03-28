@@ -1,3 +1,8 @@
+export class Tag{  
+  id?: number ;
+    label:string='';
+    url:string='';
+  }
 export class Article{
   
     id?: number ;
@@ -6,7 +11,7 @@ export class Article{
     // etat:string;
     date_publication : string='';
     abstract:string='';
-    tags :string='';
+    tags :Tag[]=[];
 
     // nature:string;
 

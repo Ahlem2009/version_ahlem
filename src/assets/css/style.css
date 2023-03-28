@@ -99,7 +99,7 @@ h6,
     background: var(--dark);
     transition: .5s;
 }
-
+/* 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
@@ -110,7 +110,7 @@ h6,
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
     }
-}
+} */
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -373,7 +373,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: var(#ffde8a);
+    color: var(#ffde8a) ;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;

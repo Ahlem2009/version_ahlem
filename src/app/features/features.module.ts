@@ -18,6 +18,7 @@ import { ListDocComponent } from './dashboard/list-doc/list-doc.component';
 import { TicketComponent } from './dashboard/ticket/ticket.component'
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GestionDocumentComponent } from './gestion-document/gestion-document.component';
 
 
 
@@ -34,7 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     ListDocComponent,
     TicketComponent,
-    DashboardComponent
+    DashboardComponent,
+    GestionDocumentComponent
   ],       
   imports: [
     CommonModule,
