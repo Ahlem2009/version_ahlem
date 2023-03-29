@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
-<div class="container-fluid">
-    <div *ngIf="auth" class="row">
+ <div class="container-fluid">
+    <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-12 bg-light">
             <app-sidebar></app-sidebar>
         </div>
@@ -8,8 +8,8 @@
             <!-- <app-dashbord></app-dashbord> -->
             <router-outlet></router-outlet>
          </div>
-    </div> 
-    <div *ngIf="!auth">
-        <router-outlet></router-outlet>
-    </div>  
+    </div>
+  </div>  
+        <!-- <router-outlet></router-outlet> -->
+   
     <app-footer></app-footer>

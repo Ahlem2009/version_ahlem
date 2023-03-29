@@ -15,5 +15,10 @@ export class ArticleService {
 
   getArticles() {
     return this.http.get<Article []>(this.baseUrl);
+ 
+  }
+
+  getArticleCategorie(nom:string):void{
+    
   }
 }

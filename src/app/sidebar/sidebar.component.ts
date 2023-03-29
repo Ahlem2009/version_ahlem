@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import {ProfileService}  from '../services/profile.service';
 import {Profile} from '../models/profile.model';
 import{Menu} from '../models/profile.model';
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -15,13 +16,12 @@ export class SidebarComponent implements OnInit {
   constructor(private service:ProfileService ){}
   
   ngOnInit(): void {
-  
-  console.log('hi');
+
   this.service.getProfil(this.prof).subscribe((res:any)=>{
    console.log(res);
-   console.log('hello');
    this.users=res; 
    return res;
  })
 }
+
 }
