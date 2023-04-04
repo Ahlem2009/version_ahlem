@@ -114,7 +114,7 @@ h6,
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
-        display: block;
+        
         visibility: hidden;
         top: 100%;
         transform: rotateX(-75deg);
